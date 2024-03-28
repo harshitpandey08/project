@@ -28,7 +28,8 @@ const Routers = () => {
     <Route path ="/services" element ={<Services/>} />
     <Route path ="/users/profile/me" element ={<ProtectedRoute allowedRoles= {['patient']}> <MyAccount /></ProtectedRoute>} />
     <Route path ="/doctors/profile/me" element ={<ProtectedRoute allowedRoles={['doctor']}><Dashboard/></ProtectedRoute>} />
-
+   
+    
   </Routes>
   )
 };
